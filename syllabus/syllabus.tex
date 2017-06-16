@@ -1,0 +1,100 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
+%\usepackage{setspace}
+\usepackage{amsmath}
+\usepackage{hanging}
+\usepackage[english]{babel}
+\usepackage[semicolon,round]{natbib} %separates each citation by a comma
+%\usepackage[numbers]{natbib} %uses numbers instead of text
+\setcitestyle{notesep={:}} %page number separator is semicolon instead of a comma
+\usepackage{url}
+\usepackage{ulem} % when using ulem package, must change \emph to \it for italics.
+\usepackage[colorlinks,citecolor=blue,urlcolor=blue,linkcolor=black]{hyperref} %hyperref package, also colorlinks and citecolor adds colored citations to text. urlcolor adds colored urls to text, linkcolor changes colors of footnotes.
+\usepackage{amssymb,amsmath,tabu}
+\usepackage{dcolumn}%for stata to LaTeX column alignment for tables.
+%\usepackage{booktabs}%for stata to LaTeX vertical spacing (between hlines and coefficients) alignment for tables.
+\usepackage{wrapfig}
+\usepackage{lscape}
+\usepackage{longtable}
+\usepackage{rotating}
+\usepackage{epstopdf}
+\usepackage{booktabs}
+%\usepackage[]{figcaps}
+\usepackage{hanging}
+\usepackage[margin=1.0in]{geometry}
+%\usepackage{authblk} %package for blocking authors, followed by blocking affiliation
+\usepackage{indentfirst}
+\usepackage{ragged2e}
+\usepackage{tabularx}
+\usepackage{ltablex}
+\usepackage{ltxtable}
+\usepackage{pdflscape}%landscape pages
+%\usepackage[singlelinecheck=false]{caption} % this left aligns the Table name/caption
+%\usepackage[justification=justified,singlelinecheck=false]{caption}
+\newcommand{\ccc}[1]{\citealt{#1}} %use this to make a new citealt or any other command
+\usepackage[T1]{fontenc} %add encoding for small caps
+\newlength{\saveparindent} %allows you to use \RaggedRight with paragraph indents below
+\setlength{\saveparindent}{\parindent}%allows you to use \RaggedRight with paragraph indents below
+\raggedright%allows you to use \RaggedRight with paragraph indents below
+\setlength{\parindent}{\saveparindent}%allows you to use \RaggedRight with paragraph indents below
+\usepackage{etoolbox}
+%\usepackage[figures,tables]{endfloat}
+\urlstyle{same}%keeps url font the same LaTeX font, and not fixed width/courier new
+%\usepackage[singlelinecheck=false]{caption} % this left aligns the Table name/caption
+%\usepackage[justification=justified,singlelinecheck=false]{caption}
+
+%below lines are to make headers single spaced
+\makeatletter
+\pretocmd{\@sect}{\singlespacing}{}{}
+\pretocmd{\@ssect}{\singlespacing}{}{}
+\apptocmd{\@sect}{\doublespacing}{}{}
+\apptocmd{\@ssect}{\doublespacing}{}{}
+\makeatother
+%above lines are to make headers single spaced
+
+\begin{document}
+\title{Social Movements \& Collective Behavior \\ Sociology 348 \\ Fall 2017 
+%\end{singlespace}}
+%\author[]{
+%\thanks{I would like to thank Edwin Amenta, Rory McVeigh, %John Hipp, Graeme Boushey, Matt Huffman, David Meyer, Nina Bandelj, and Bryant Crubaugh for their feedback on earlier versions of this article. Versions of this paper were presented at the 2015 Annual Meetings of the Pacific Sociological Association, the Society for the Study of Social Problems, the American Sociological Association, and the Conference of Ford Fellows.}
+}
+%\doublespacing
+%\singlespacing
+\date{}
+\maketitle
+
+%\begin{singlespace}
+Time: \textbf{M\&W: 1:00pm--2:15pm} \hfill  \hfill Instructor: \textbf{Burrel Vann Jr} \\
+Room: \textbf{H--514} \hfill  \hfill Email: \textbf{bjvann@fullerton.edu} \\
+Website: \textbf{site} \hfill  \hfill Office: \textbf{CP--933} \\
+  \hfill  \hfill Office Hours: \textbf{M\&W: 10:00am--11:00am} \\
+%\end{singlespace}
+
+
+%\begin{singlespace}
+\section*{Course Description}
+Why do people organize to change the world around them? Why do people sometimes protest but more often not? How do movements work, and why do some succeed while others fail? \newline
+
+At various points in history, social movements have had a substantial impact on social policy and politics. In the 1910s, women organized to earn their right to vote. In the 1960s, many protested the gross injustices endured by African-Americans in defense of civil rights. In the 1970s, college students, draft-dodgers, and others worked together to oppose the Vietnam War. In the late 2000s, a Tea Party movement emerged to protest the government?s involvement in the redistribution of wealth to ameliorate income inequality. As these examples show, social movements are critical to American democracy. \newline
+
+This course explores the origins, dynamics, and consequences of social movements. Over the semester, we will examine a wide range of topics including: the emergence of movements, recruitment, interactions between social movements and the general public or political officials, tactics, and the factors contributing to the success and failure of movements.
+%%\end{singlespace}
+
+%\begin{singlespace}
+\section*{Course Objectives}
+\begin{itemize}
+\item To introduce students to the concept of social movements, and how they differ from other forms of collective behavior.
+\item To examine the emergence, development, dynamics and tactics, and impacts of social movements in the United States.
+\item To gain a familiarity with current research on social movements.
+\item To help students design a research proposal to answer a burning question in social movement research.
+\end{itemize}
+
+
+
+
+
+%\end{singlespace}
+
+
+\end{document}
