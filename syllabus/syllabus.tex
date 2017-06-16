@@ -1,68 +1,62 @@
-\documentclass[12pt]{article}
-\usepackage{graphicx}
-\DeclareGraphicsExtensions{.pdf,.png,.jpg}
-%\usepackage{setspace}
-\usepackage{amsmath}
-\usepackage{hanging}
-\usepackage[english]{babel}
-\usepackage[semicolon,round]{natbib} %separates each citation by a comma
-%\usepackage[numbers]{natbib} %uses numbers instead of text
-\setcitestyle{notesep={:}} %page number separator is semicolon instead of a comma
+\documentclass{article}
+\usepackage[margin=1.0in]{geometry} %change all margins to 1.0 inches (except the title, but moves up)
+%\documentclass[12pt]{article}
+%\usepackage[margin=.8in]{geometry} 
+%\usepackage{authblk} %package for blocking authors, followed by blocking affiliation
 \usepackage{url}
 \usepackage{ulem} % when using ulem package, must change \emph to \it for italics.
-\usepackage[colorlinks,citecolor=blue,urlcolor=blue,linkcolor=black]{hyperref} %hyperref package, also colorlinks and citecolor adds colored citations to text. urlcolor adds colored urls to text, linkcolor changes colors of footnotes.
-\usepackage{amssymb,amsmath,tabu}
-\usepackage{dcolumn}%for stata to LaTeX column alignment for tables.
-%\usepackage{booktabs}%for stata to LaTeX vertical spacing (between hlines and coefficients) alignment for tables.
-\usepackage{wrapfig}
-\usepackage{lscape}
-\usepackage{longtable}
-\usepackage{rotating}
-\usepackage{epstopdf}
-\usepackage{booktabs}
-%\usepackage[]{figcaps}
-\usepackage{hanging}
-\usepackage[margin=1.0in]{geometry}
-%\usepackage{authblk} %package for blocking authors, followed by blocking affiliation
-\usepackage{indentfirst}
-\usepackage{ragged2e}
-\usepackage{tabularx}
-\usepackage{ltablex}
-\usepackage{ltxtable}
-\usepackage{pdflscape}%landscape pages
-%\usepackage[singlelinecheck=false]{caption} % this left aligns the Table name/caption
-%\usepackage[justification=justified,singlelinecheck=false]{caption}
-\newcommand{\ccc}[1]{\citealt{#1}} %use this to make a new citealt or any other command
+\usepackage{hyperref} %allow for hyper links
+\usepackage [english]{babel}
+\usepackage [autostyle, english = american]{csquotes}
+\MakeOuterQuote{"}
 \usepackage[T1]{fontenc} %add encoding for small caps
-\newlength{\saveparindent} %allows you to use \RaggedRight with paragraph indents below
-\setlength{\saveparindent}{\parindent}%allows you to use \RaggedRight with paragraph indents below
-\raggedright%allows you to use \RaggedRight with paragraph indents below
-\setlength{\parindent}{\saveparindent}%allows you to use \RaggedRight with paragraph indents below
-\usepackage{etoolbox}
-%\usepackage[figures,tables]{endfloat}
-\urlstyle{same}%keeps url font the same LaTeX font, and not fixed width/courier new
-%\usepackage[singlelinecheck=false]{caption} % this left aligns the Table name/caption
-%\usepackage[justification=justified,singlelinecheck=false]{caption}
-
-%below lines are to make headers single spaced
+\def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
+\let\endchangemargin=\endlist 
+\usepackage{titling} %title margin editing
+\setlength{\droptitle}{-.75in} %size of top margin
+\usepackage{setspace}
+\usepackage{changepage} %changes margins using adjustwidth
+\usepackage{tabularx}
+\usepackage{tabu}
+\usepackage{longtable}
+\usepackage[super]{nth}
+\usepackage{paralist} %to use compact item stuff
 \makeatletter
-\pretocmd{\@sect}{\singlespacing}{}{}
-\pretocmd{\@ssect}{\singlespacing}{}{}
-\apptocmd{\@sect}{\doublespacing}{}{}
-\apptocmd{\@ssect}{\doublespacing}{}{}
-\makeatother
-%above lines are to make headers single spaced
-
-\begin{document}
-\title{Social Movements \& Collective Behavior \\ Sociology 348 \\ Fall 2017 
-%\end{singlespace}}
-%\author[]{
-%\thanks{I would like to thank Edwin Amenta, Rory McVeigh, %John Hipp, Graeme Boushey, Matt Huffman, David Meyer, Nina Bandelj, and Bryant Crubaugh for their feedback on earlier versions of this article. Versions of this paper were presented at the 2015 Annual Meetings of the Pacific Sociological Association, the Society for the Study of Social Problems, the American Sociological Association, and the Conference of Ford Fellows.}
+\newcommand\tabfill[1]{%
+\dimen@\linewidth%
+\advance\dimen@\@totalleftmargin%
+\advance\dimen@-\dimen\@curtab%
+\parbox[t]\dimen@{\raggedright #1\ifhmode\strut\fi}%
 }
-%\doublespacing
-%\singlespacing
-\date{}
-\maketitle
+%%%%below changes footer to special footer with name and page number
+\usepackage{fancyhdr}
+\pagestyle{fancy} %can be {fancy}
+\cfoot{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+%%%%above changes footer to special footer with name and page number
+\begin{document}
+%\date{today}
+%\maketitle
+
+\begingroup  
+  \centering
+  \begin{spacing}{1.5} %begins 1.5 spacing
+  \textsc{\textbf{\LARGE{Social Movements \& Collective Behavior}}} %textsc is small caps, textbf is bold font, huge is largest font possible
+  \end{spacing}
+  \begin{spacing}{1.0} %begins single-spacing
+  \centerline{\large Sociology 348}
+  \centerline{\large Fall 2016}
+  %\centerline{\normalsize bvann@uci.edu \textbullet \space (714) 398-5815 \textbullet \space \href{http://www.burrelvannjr.com}{burrelvannjr.com}}
+  \end{spacing}
+\endgroup
+\raggedright %left-justifies text AKA does not justify all of text
+
+
+%\begingroup %date group start
+  %за\centerline{} %line space
+  %\centerline{} %line space
+   %\centerline{( {\it{\today}} )} %today's date, italicized with parentheses
+%\endgroup %end date group
 
 %\begin{singlespace}
 Time: \textbf{M\&W: 1:00pm--2:15pm} \hfill  \hfill Instructor: \textbf{Burrel Vann Jr} \\
@@ -76,7 +70,7 @@ Website: \textbf{site} \hfill  \hfill Office: \textbf{CP--933} \\
 \section*{Course Description}
 Why do people organize to change the world around them? Why do people sometimes protest but more often not? How do movements work, and why do some succeed while others fail? \newline
 
-At various points in history, social movements have had a substantial impact on social policy and politics. In the 1910s, women organized to earn their right to vote. In the 1960s, many protested the gross injustices endured by African-Americans in defense of civil rights. In the 1970s, college students, draft-dodgers, and others worked together to oppose the Vietnam War. In the late 2000s, a Tea Party movement emerged to protest the government?s involvement in the redistribution of wealth to ameliorate income inequality. As these examples show, social movements are critical to American democracy. \newline
+At various points in history, social movements have had a substantial impact on social policy and politics. In the 1910s, women organized to earn their right to vote. In the 1960s, many protested the gross injustices endured by African-Americans in defense of civil rights. In the 1970s, college students, draft-dodgers, and others worked together to oppose the Vietnam War. In the late 2000s, a Tea Party movement emerged to protest the government's involvement in the redistribution of wealth to ameliorate income inequality. As these examples show, social movements are critical to American democracy. \newline
 
 This course explores the origins, dynamics, and consequences of social movements. Over the semester, we will examine a wide range of topics including: the emergence of movements, recruitment, interactions between social movements and the general public or political officials, tactics, and the factors contributing to the success and failure of movements.
 %%\end{singlespace}
@@ -84,17 +78,169 @@ This course explores the origins, dynamics, and consequences of social movements
 %\begin{singlespace}
 \section*{Course Objectives}
 \begin{itemize}
-\item To introduce students to the concept of social movements, and how they differ from other forms of collective behavior.
-\item To examine the emergence, development, dynamics and tactics, and impacts of social movements in the United States.
-\item To gain a familiarity with current research on social movements.
+\item To introduce students to the concept of social movements, and how they differ from other forms of collective behavior.\vspace*{-.75em}
+\item To examine the emergence, development, dynamics and tactics, and impacts of social movements in the United States.\vspace*{-.75em}
+\item To gain a familiarity with current research on social movements.\vspace*{-.75em}
 \item To help students design a research proposal to answer a burning question in social movement research.
 \end{itemize}
 
 
+\section*{Required Materials}
+\textbf{Textbook} \newline
+David A. Snow and Sarah A. Soule (2010). \textit{A Primer on Social Movements}. New York, NY: W.W. Norton \& Company, Inc.
+
+\section*{Course Requirements}
+In order to engage in a lively discussion of social movement topics, students are required to complete the weekly readings (chapters and/or articles). In addition, each student must lead at least two article discussions (with your group), complete four short research question quizzes, turn in draft sections of a research proposal, and submit a final research proposal. \newline
+
+\textbf{Attendance}\newline
+Attendance for this class is not mandatory, but on-time attendance is critical for your overall success in the course. If you miss a class meeting, look on the course website for material you may have missed. Second, if you find it difficult to understand some of the material, get in contact with your one or more of your classmates. Third, if you still find it difficult, set aside time to meet with me in office hours. If my office hours don?t work, email me so that we can schedule a time to meet. I reserve the right to re-do a lecture. \newline
+
+\textbf{Readings}\newline
+Each weekly reading is geared toward helping you grasp of concepts about social movement emergence, dynamics and tactics, and impacts. Each week, students will have to complete a set of between one and four readings, which will consist of a combination of readings from the required text and articles. All articles will be provided on Titanium. \newline
+
+When reading articles, it's best to read them quickly. To do so, you don't need to read the entire article. Instead, first read the abstract, then the introduction, then conclusion. (If you so desire, you can go back to read the literature review and the data/methods section, noting section headings and tables/graphs. This is only important if you are trying to learn more about how the researcher collected their data, or if you want to explore some of the literature the researchers used.)\newline
+
+\textbf{Discussion Leader Participation}\newline
+During the first week, students will be asked to sign up for at least two articles for which they will be discussion leaders. The discussions for each article will be led by at least two students who will develop no fewer than 5 discussion questions related to their article, which will be used as the springboard for discussion. (I expect that the discussion leaders meet prior to their discussion day to discuss the assigned materials and organize their questions and comments.)  I expect the discussion to focus on key themes that run across the material, emphasizing theoretical insights and claims. \newline
+
+\textbf{Research Question Quizzes}\newline
+During the semester, students are required to complete two (2) research question quizzes: one (1) practice quiz related to the student's general interest in sociology, and one (1) related to a social movements topic covered in this course that interests the student. These quizzes are designed to help you develop a strong research question for your final research proposal. Each quiz asks the same questions but students are required to come up with new research questions related to their topic. For example, a student can develop three distinct research questions related to social movement participation, or three questions related to different topics (e.g. political outcomes, organizations, and framing). The first (practice) quiz must be submitted by 8/26. The other quiz can be submitted until 11/4. I highly encourage students to complete a quiz at the end of a week when a topic of interest is covered. That is, don?t wait until the quizzes are due to complete them all. For example, if after we cover the unit on grievances, you find yourself interested in the topic and can see yourself writing a proposal on it, complete the quiz right after we complete the unit.\newline
+
+\textbf{Final Research Proposal and Draft Sections}\newline
+At the end of the semester, instead of a final exam, each student is required to complete a final research proposal paper. This paper should look like a proposal you would submit the CSUF Institutional Review Board (IRB) or the National Science Foundation (NSF) if you were to actually conduct the study. The final proposal should be 3-5 pages in length, using ASA format (1-inch margins, 12-pt font). Shorter proposals are better: That is, if you can write a great proposal (with all the necessary information) in three pages rather than five pages, please do so. Do not ramble or fill up space unnecessarily.\newline
+
+Before completing the final research proposal, students are required to submit early draft sections of their final paper. These three (3) sections include the introduction, the literature review, and the data/methods sections. These sections are essentially rough drafts. The process of drafting the paper in chunks, and turning them in weeks before the final paper is due, is designed to help students complete the work early, receive and incorporate feedback for improving the paper, and gets students accustomed to the process of writing up research.\newline
+
+\textbf{Policy on Late Assignments}\newline
+Make up assignments are not guaranteed and will be dealt with on a case-by-case basis. In extreme emergencies, written documentation will be required.\newline
+
+\textbf{Extra Credit}\newline
+Students may be given the opportunity to complete one extra credit presentation on how a contemporary social movement relates to a topic covered in the course, worth a maximum of 15 points. I reserve the right to provide an extra credit assignment.\newline
+
+\section*{Grading Breakdown}
+Final grades will be based on two articles as discussion leader (25 points each), one practice research question quizzes (10 points), one final research question quiz (30 points), three draft proposal sections (20 points each), and a final research proposal (100 points) for a total of 250 points. A +/- grading system will not be used. 
+
+\begin{tabbing}
+\quad \quad \quad \= Discussion Leader Participation \quad \quad \= \tabfill{50}\\
+\> Research Question Quizzes \> \tabfill{40}\\
+\> Draft Introduction Section \> \tabfill{20}\\
+\> Draft Literature Review Section \> \tabfill{20}\\
+\> Draft Data/Methods Section \> \tabfill{20}\\
+\> Final Research Proposal \> \tabfill{100}\\
+\> Total  \> \tabfill{250}
+\end{tabbing}
+
+\textbf{Letter Grades}
+\vspace*{-.5em}
+\begin{tabbing}
+\quad \quad \quad \= A = 90\% and above \\
+\> B = 80\% and above \\
+\> C = 70\% and above \\
+\> D = 60\% and above \\
+\> F = Below 60\% \\
+\end{tabbing}
+
+\textbf{Academic Honesty}\newline
+The California State University, Fullerton policy on academic integrity is posted at \href{http://www.fullerton.edu/integrity/student/AcademicIntegrityResources.asp}{http://www.fullerton.edu/integrity/student/AcademicIntegrityResources.asp} . All work you turn in, including quizzes, draft proposal sections, and the final research proposal must be your own.
+
+\section*{Changes to Material}
+I reserve the right to make changes to the syllabus, including the course outline, at any time, based on the pace of the class.
 
 
+\newpage
 
-%\end{singlespace}
+\section*{Course Schedule}
+
+\subsection*{Week 1: What is a social movement?}
+\begin{tabbing}
+\quad \quad \quad \= \textbf{Book Chapter(s)}: 1\\
+\> \textbf{Article(s)}: ``Developing a Research Question''\\
+\> \textbf{Assignment(s)}: Example Research Question (Due 8/26 @ 5pm)
+\end{tabbing}
+
+\subsection*{Week 2: Political Context and Opportunities}
+\begin{tabbing}
+\quad \quad \quad \= \textbf{Book Chapter(s)}: 3 (pp. 64-87)\\
+\> \textbf{Article(s)}: Almeida (2003)
+\end{tabbing}
+
+\subsection*{Week 3: Resources}
+\begin{tabbing}
+\quad \quad \quad \= \textbf{Book Chapter(s)}: 3 (pp. 87-98) \\
+\> \textbf{Article(s)}: Edwards and McCarthy (2004)
+\end{tabbing}
+
+\subsection*{Week 4: Grievances}
+\begin{tabbing}
+\quad \quad \quad \= \textbf{Book Chapter(s)}: 2 \\
+\> \textbf{Article(s)}: Van Dyke and Soule (2002); Snow et al. (2005)
+\end{tabbing}
+
+\subsection*{Week 5: Organizations}
+\begin{tabbing}
+\quad \quad \quad \= \textbf{Article(s)}: Robnett (1996); Staggenborg (1988); Taylor (1989); McVeigh et al. (2014)
+\end{tabbing}
+
+\subsection*{Week 6: Framing and Media}
+\begin{tabbing}
+\quad \quad \quad \= \textbf{Article(s)}:  Snow et al. (2007); Roscigno and Danaher (2001)
+\end{tabbing}
+
+\subsection*{Week 7: Recruitment, Participation, Identity}
+\begin{tabbing}
+\quad \quad \quad \= \textbf{Book Chapter(s)}: 4 \\
+\> \textbf{Article(s)}: Corrigall-Brown et al. (2009); Einwohner (2006); Futrell and Simi (2004)
+\end{tabbing}
+
+\subsection*{Week 8:  Dynamics and Tactics}
+\begin{tabbing}
+\quad \quad \quad \= \textbf{Book Chapter(s)}: 5 \\
+\> \textbf{Article(s)}: McAdam (1983); Van Dyke (2003)
+\end{tabbing}
+
+\subsection*{Week 9: Political Consequences/Outcomes}
+\begin{tabbing}
+\quad \quad \quad \= \textbf{Book Chapter(s)}: 6 (pp. 202-217)\\
+\> \textbf{Article(s)}: Andrews (2001); Andrews (1997); McAdam and Su (2002)
+\end{tabbing}
+
+\subsection*{Week 10: Cultural Consequences/Outcomes}
+\begin{tabbing}
+\quad \quad \quad \= \textbf{Book Chapter(s)}: 6 (pp. 217-220)\\
+\> \textbf{Article(s)}: Bail (2012); Amenta et al. (2009)
+\end{tabbing}
+
+\subsection*{Week 11: Discussion and Small Groups for Research Questions/Proposal}
+\begin{tabbing}
+\quad \quad \quad \= \textbf{Article(s)}: ``Example Research Proposal''; ``Writing an Introduction'' \\
+\> \textbf{Assignment(s)}: Research Question for Final Research Proposal (Due 11/4 @ 5pm)
+\end{tabbing}
+
+\subsection*{Week 12:  Discussions of Literature}
+\begin{tabbing}
+\quad \quad \quad \= \textbf{Assignment(s)}: Draft Introduction Section (Due 11/11 @ 5pm)
+\end{tabbing}
+
+\subsection*{Week 13: Small Groups Discussions of Literature Review}
+\begin{tabbing}
+\quad \quad \quad \= \textbf{Assignment(s)}: Draft Literature Review Section (Due 11/18 @ 5pm)
+\end{tabbing}
+
+\subsection*{Week 14: NO CLASS: Thanksgiving Break} 
+\vspace*{1em}
+
+\subsection*{Week 15: Small Group Discussions of Analytic Strategy}
+\begin{tabbing}
+\quad \quad \quad \= \textbf{Assignment(s)}: Draft Analytic Strategy Section (Due 12/2 @ 5pm)
+\end{tabbing}
+
+\subsection*{Week 16: Discussions of How Topics Relate to Movement of Choice}
+\vspace*{1em}
+
+\subsection*{Finals Week: }
+\begin{tabbing}
+\quad \quad \quad \= \textbf{Assignment(s)}: Final Research Proposal (Due 12/16 @ 12PM NOON)
+\end{tabbing}
 
 
 \end{document}
