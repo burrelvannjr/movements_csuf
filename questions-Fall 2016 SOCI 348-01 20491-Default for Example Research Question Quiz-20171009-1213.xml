@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+        <text>$module$/Default for Example Research Question Quiz</text>
+
+    </category>
+  </question>
+
+<!-- question: 2742141  -->
+  <question type="shortanswer">
+    <name>
+      <text>Burning Question</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Pick one of the topics, movements, or issues discussed in class. Consider what interests you the most about that topic. <b>What burning question would you like to answer within this topic?&nbsp;</b></p><p><br></p><p><i>Note: For example, when I became interested in protests, social movements, education and politics, I really wanted to answer the following question: why do some people (students) participate in protests while others do not?</i><br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <usecase>0</usecase>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>*</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 2742150  -->
+  <question type="shortanswer">
+    <name>
+      <text>Dependent Variable</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><b>What is the dependent variable (outcome) in your phrasing?</b></p><p><i>Note: For example, the dependent variable is protest participation, because protest participation is dependent on (influenced by) social ties.</i></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <usecase>0</usecase>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>*</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 2742156  -->
+  <question type="shortanswer">
+    <name>
+      <text>Independent Variable</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><b>What is the independent variable (predictor) in your phrasing?&nbsp;</b></p><p><i>Note: For example, the independent variable is social ties because the number of social ties influences protest participation.</i><br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <usecase>0</usecase>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>*</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 2742147  -->
+  <question type="shortanswer">
+    <name>
+      <text>Phrasing</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><p style="margin: 0px 0px 10px; color: rgb(51, 51, 51); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; line-height: 20px; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; "><b>Phrase that answer in terms of A influences B (or put another way, X influences Y).</b></p><p style="margin: 0px 0px 10px; color: rgb(51, 51, 51); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; line-height: 20px; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; "><i>Note: For example, social ties influence protest participation.</i></p><br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <usecase>0</usecase>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>*</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 2742144  -->
+  <question type="shortanswer">
+    <name>
+      <text>Potential Answers</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p></p><p style="margin: 0px 0px 10px; color: rgb(51, 51, 51); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; line-height: 20px; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; "><b>What are some potential answers for that question?&nbsp;</b>These answers can be either those you've read in academic literature, or even common-knowledge reasons.</p><p style="margin: 0px 0px 10px; color: rgb(51, 51, 51); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; line-height: 20px; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; "><i>Note: For example, in trying to understand why some people protest while others don't, I found out (through reading some academic literature) protesters tended to have a lot of friends who were also protesting. The logic is that having higher numbers of politically-involved friends (also known as politically-oriented social ties) essentially puts peer pressure on a person to go out and participate in protest.</i></p><br><p></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>2.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <usecase>0</usecase>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>*</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 2742159  -->
+  <question type="shortanswer">
+    <name>
+      <text>Research Question</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><b>Phrase your statement in research question terms. Much like this "Is variation in the independent variable (X, predictor) related to variation in the dependent variable (Y, outcome)?"</b></p><p><i>Note: For example, "Is variation in social ties related to variation in protest participation?" Variation is just another way of saying that the variables vary, or change. Such a question could imply that higher numbers of social ties could influence higher levels of protest participation.</i></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>3.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <usecase>0</usecase>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>*</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 2742153  -->
+  <question type="shortanswer">
+    <name>
+      <text>Topics/Interests</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><span style="color: rgb(51, 51, 51); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; line-height: 20px; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; ">Consider your current major (e.g. Sociology, Political Science, Business Economics, Social Ecology, Chemistry, etc.).&nbsp;</span><b style="color: rgb(51, 51, 51); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; line-height: 20px; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; ">What topics or areas interest you the most in your major? List as many as you'd like.&nbsp;</b><p style="margin: 0px 0px 10px; color: rgb(51, 51, 51); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; line-height: 20px; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; "><br></p><p style="margin: 0px 0px 10px; color: rgb(51, 51, 51); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; letter-spacing: normal; line-height: 20px; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; "><i>Note: For example, when I became a sociology major, I was immediately interested in the following topics: social movements, protest, education, and politics.</i></p><br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <usecase>0</usecase>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>*</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 2742138  -->
+  <question type="shortanswer">
+    <name>
+      <text>Topics/Interests2</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[Consider your current major (e.g. Sociology, Political Science, Business Economics, Social Ecology, Chemistry, etc.). <b>What topics or areas interest you the most in your major? List as many as you'd like.&nbsp;</b><p><br></p><p><i>Note: For example, when I became a sociology major, I was immediately interested in the following topics: social movements, protest, education, and politics.</i></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <usecase>0</usecase>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>*</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+</quiz>
